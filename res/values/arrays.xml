@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="network_modes">
+        <item name="network_mode_wcdma_pref">"DATA OFF"</item>
+        <item name="network_mode_wcdma_pref">"GSM/WCDMA (WCDMA preferred)"</item>
+        <item name="network_mode_gsm_only">"GSM only"</item>
+        <item name="network_mode_wcdma_only">"WCDMA only"</item>
+        <item name="network_mode_gsm_umts">"GSM/WCDMA (auto mode, according to PRL)"</item>
+        <item name="network_mode_cdma">"CDMA and EvDo (auto mode, according to PRL)"</item>
+        <item name="network_mode_cdma_no_evdo">"CDMA only"</item>
+        <item name="network_mode_evdo_no_cdma">"EvDo only"</item>
+        <item name="network_mode_global">"GSM/WCDMA, CDMA, and EvDo (auto mode, according to PRL)"</item>
+        <item name="network_mode_lte_cdma_evdo">"LTE, CDMA and EvDo"</item>
+        <item name="network_mode_lte_gsm_wcdma">"LTE, GSM/WCDMA"</item>
+        <item name="network_mode_lte_cmda_evdo_gsm_wcdma">"LTE, CDMA, EvDo, GSM/WCDMA"</item>
+        <item name="network_mode_lte_only">"LTE Only mode."</item>
+        <item name="network_mode_lte_wcdma">"LTE/WCDMA"</item>
+        <item name="network_mode_tdscdma_only">"TD-SCDMA only"</item>
+        <item name="network_mode_tdscdma_wcdma">"TD-SCDMA and WCDMA"</item>
+        <item name="network_mode_lte_tdscdma">"TD-SCDMA and LTE"</item>
+        <item name="network_mode_tdscdma_gsm">"TD-SCDMA and GSM"</item>
+        <item name="network_mode_lte_tdscdma_gsm">"TD-SCDMA,GSM and LTE"</item>
+        <item name="network_mode_tdscdma_gsm_wcdma">"TD-SCDMA, GSM/WCDMA"</item>
+        <item name="network_mode_lte_tdscdma_wcdma">"TD-SCDMA, WCDMA and LTE"</item>
+        <item name="network_mode_lte_tdscdma_gsm_wcdma">"TD-SCDMA, GSM/WCDMA and LTE"</item>
+        <item name="network_mode_tdscdma_cdma_evdo_gsm_wcdma">"TD-SCDMA,EvDo,CDMA,GSM/WCDMA"</item>
+        <item name="network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma">"TD-SCDMA/LTE/GSM/WCDMA, CDMA, and EvDo"</item>
+    </string-array>
+    <string-array name="network_modes_values">
+        <item name="network_mode_off">99</item>
+        <item name="network_mode_wcdma_pref">0</item>
+        <item name="network_mode_gsm_only">1</item>
+        <item name="network_mode_wcdma_only">2</item>
+        <item name="network_mode_gsm_umts">3</item>
+        <item name="network_mode_cdma">4</item>
+        <item name="network_mode_cdma_no_evdo">5</item>
+        <item name="network_mode_evdo_no_cdma">6</item>
+        <item name="network_mode_global">7</item>
+        <item name="network_mode_lte_cdma_evdo">8</item>
+        <item name="network_mode_lte_gsm_wcdma">9</item>
+        <item name="network_mode_lte_cmda_evdo_gsm_wcdma">10</item>
+        <item name="network_mode_lte_only">11</item>
+        <item name="network_mode_lte_wcdma">12</item>
+        <item name="network_mode_tdscdma_only">13</item>
+        <item name="network_mode_tdscdma_wcdma">14</item>
+        <item name="network_mode_lte_tdscdma">15</item>
+        <item name="network_mode_tdscdma_gsm">16</item>
+        <item name="network_mode_lte_tdscdma_gsm">17</item>
+        <item name="network_mode_tdscdma_gsm_wcdma">18</item>
+        <item name="network_mode_lte_tdscdma_wcdma">19</item>
+        <item name="network_mode_lte_tdscdma_gsm_wcdma">20</item>
+        <item name="network_mode_tdscdma_cdma_evdo_gsm_wcdma">21</item>
+        <item name="network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma">22</item>
+    </string-array>
+    <string-array name="gps_modes">
+        <item name="location_mode_off">"Mode off"</item>
+        <item name="location_mode_sensors_only">"Mode sensors (GPS) only"</item>
+        <item name="location_mode_battery_saving">"Mode battery saving"</item>
+        <item name="location_mode_high_accuracy">"Mode high accuracy"</item>
+    </string-array>
+    <string-array name="gps_modes_values">
+        <item name="location_mode_off">0</item>
+        <item name="location_mode_sensors_only">1</item>
+        <item name="location_mode_battery_saving">2</item>
+        <item name="location_mode_high_accuracy">3</item>
+    </string-array>
+
+</resources>

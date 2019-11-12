@@ -1,0 +1,138 @@
+<resources>
+
+    <!--  -->
+    <string name="app_name">Smart Network</string>
+    <!--  -->
+    <string name="donate">Spenden</string>
+    <!--  -->
+    <string name="no_thanks">Nein danke</string>
+    <!--  -->
+    <string name="enable_smart_switch">Wechsel des Netzwerkmoduses</string>
+    <!--  -->
+    <string name="disconnect_wifi">Wifi trennen</string>
+    <!--  -->
+    <string name="disconnect_from_active_wifi">Der derzeitige WLAN Access Point wird getrennt, sobald der Bildschirm ausgeschaltet ist. </string>
+    <!--  -->
+    <string name="turn_off_wifi">Wifi ausschalten</string>
+    <!--  -->
+    <string name="turn_off_wifi_service">Den WLAN Dienst beenden, sobald der Bildschirm ausgeschaltet ist. </string>
+    <!--  -->
+    <string name="rate_app">Bewerte die App</string>
+    <!--  -->
+    <string name="white_list_applications">White-List Programme</string>
+    <!--  -->
+    <string name="wifi">WLAN </string>
+    <!--  -->
+    <string name="mobile_networks">Mobiles Netzwerk</string>
+    <!--  -->
+    <string name="switch_data_connection_type">Ändere den Netzwerk-Modus zum Modus \'Bildschirm aus\' (nur 2G/GSM bzw. dein gewählter \'Bildschirm aus\'-Modus), wenn der Bildschirm aus geht.</string>
+    <!--  -->
+    <string name="default_screen_on_mode">Voreingestellter Modus für aktivierten Bildschirm</string>
+    <!--  -->
+    <string name="select_your_default_screen">Wähle den Standard-Netzwerkmodus, wenn der Bildschirm AN geht: %s</string>
+    <!--  -->
+    <string name="default_screen_off_mode">Standard \'Bildschirm aus\'-Modus</string>
+    <!--  -->
+    <string name="select_your_default_screen_off">Wähle den Standard-Netzwerkmodus, wenn der Bildschirm AUS geht: %s</string>
+    <!--  -->
+    <string name="about_info">Mohamed Karami (Wanam)@xda-developers @ce4arab
+
+http://twitter.com/WanamXda</string>
+    <!--  -->
+    <string name="wifi_will_not_disconnect_turn_off">Wi-Fi wird NICHT abgeschaltet, wenn ausgewählte Apps laufen.</string>
+    <!--  -->
+    <string name="mobile_data_will_not_switch_turn_off">Mobile Daten werden NICHT verändert, wenn ausgewählte Apps laufen.</string>
+    <!--  -->
+    <string name="select_all_none">\"Wähle alle/nichts\"</string>
+    <!--  -->
+    <string name="disable_auto_sync">Deaktiviere AutoSync </string>
+    <!--  -->
+    <string name="disable_data_auto_synchronization">Deaktiviere AutoSync über Mobile Daten und Wi-Fi, wenn der Bildschirm aus geht. </string>
+    <!--  -->
+    <string name="data_synchronization">Daten-Synchronisation</string>
+    <!--  -->
+    <string name="switching_delay">Umschalt-Verzögerung</string>
+    <!--  -->
+    <string name="select_the_delay_smart_network_should_wait">Wähle die Verzögerung, bis der Bildschirm aus geht, bevor das Netzwerk der mobilen Daten verändert wird. </string>
+    <!--  -->
+    <string name="sync_deactivation_delay">Umschalt-Verzögerung für die Deaktivierung der Daten-Synchronisation</string>
+    <!--  -->
+    <string name="select_the_delay_screen_goes_off_before_d">Wähle die Verzögerung, wenn der Bildschirm aus ist, bevor AutoSync deaktiviert wird. </string>
+    <!--  -->
+    <string name="select_the_delay_screen_goes_off_before_c">Wähle die Verzögerung, wenn der Bildschirm aus ist, bis der Wi-Fi Status verändert wird. </string>
+    <!--  -->
+    <string name="disable_bluetooth">Bluetooth deaktivieren</string>
+    <!--  -->
+    <string name="turn_off_bluetooth_when_screen_is_off">Bluetooth deaktivieren, wenn der Bildschirm aus geht. </string>
+    <!--  -->
+    <string name="turn_off_nfc">NFC ausschalten</string>
+    <!--  -->
+    <string name="turn_off_nfc_when_screen_is_off">NFC ausschalten, wenn der Bildschirm aus geht. </string>
+    <!--  -->
+    <string name="turn_off_delay">Ausschalt-Verzögerung</string>
+    <!--  -->
+    <string name="select_the_delay_screen_goes_off_b">Wähle die Verzögerung, wenn der Bildschirm aus ist, bevor der NFC Status verändert wird. </string>
+    <!--  -->
+    <string name="select_the_delay_screen_bluetooth_state">Wähle die Verzögerung, wenn der Bildschirm aus ist, bevor der Bluetooth-Status verändert wird. </string>
+    <!--  -->
+    <string name="nfc">NFC</string>
+    <!--  -->
+    <string name="bluetooth">Bluetooth</string>
+    <!--  -->
+    <string name="keep_on_wifi_ap">Wi-Fi Dienst an lassen </string>
+    <!--  -->
+    <string name="keep_current_mobile_data_state_while_wifi">Ändere den aktuellen Status der mobilen Daten NICHT, wenn Wi-Fi Tethering aktiviert ist. </string>
+    <!--  -->
+    <string name="keep_on_active_call">Belasse es wie es ist, wenn ein Anruf getätigt wird. </string>
+    <!--  -->
+    <string name="keep_current_mobile_data_call_is_active">Ändere den aktuellen Status der mobilen Daten NICHT, wenn gerade ein Anruf stattfindet. </string>
+    <!--  -->
+    <string name="wifi_ap_whitelist">Wi-Fi SSID WhiteList</string>
+    <!--  -->
+    <string name="wifi_state_will_not_change_if_one_of">Der Status der Wi-Fi Verbindung wird nicht verändert, wenn einer der in der WhiteList angegebenen AccessPoints verbunden ist. </string>
+    <!--  -->
+    <string name="switch_while_wifi_is_connected">Verändere während Wi-Fi verbunden ist. </string>
+    <!--  -->
+    <string name="switch_mobile_network_mode_to_screen_off">Die mobilen Daten werden ausgeschaltet oder zum \'Bildschirm aus\'-Modus verändert, wenn eine Wi-Fi Verbindung besteht. </string>
+    <!--  -->
+    <string name="minutes">Minuten</string>
+    <!--  -->
+    <string name="keep_while_charging">Behalte bei während dem Laden </string>
+    <!--  -->
+    <string name="do_not_switch_turn_off_mobile_data">Verändere die mobilen Daten NICHT, wenn das Gerät über USB oder Strom verbunden ist. </string>
+    <!--  -->
+    <string name="do_not_disconnect_turn_off_wifi">Verändere Wi-Fi NICHT, wenn das Gerät über USB oder Strom verbunden ist. </string>
+    <!--  -->
+    <string name="activation_timer">Zeit-Einsteller für die Aktivierung</string>
+    <!--  -->
+    <string name="enable_data_synchronization_for">Die Daten-Synchronisation für eine bestimmte Dauer aktivieren, wenn der Bildschirm aus ist. </string>
+    <!--  -->
+    <string name="deactivation_interval">Intervall für die Deaktivierung </string>
+    <!--  -->
+    <string name="keep_data_synchronization_disabled_for">Lasse die Daten-Synchronisation deaktiviert für</string>
+    <!--  -->
+    <string name="activation_duration">Dauer der Aktivierung</string>
+    <!--  -->
+    <string name="then_keep_data_synchronization_enabled_for">Lasse anschließend die DataSync aktiviert für</string>
+    <!--  -->
+    <string name="enable_mobile_data_higher_network_mode">Aktiviere die mobilen Daten (höherer Netzwerkmodus) für eine bestimmte Dauer während der Bildschirm aus ist. </string>
+    <!--  -->
+    <string name="keep_mobile_data_higher_network">Lasse die mobilen Daten (höherer Netzwerkmodus) deaktiviert für</string>
+    <!--  -->
+    <string name="then_keep_mobile_data_higher_network">Lasse anschließend die mobilen Daten (höherer Netzwerkmodus) aktiviert für</string>
+    <!--  -->
+    <string name="enable_wifi_for_a_specific_duration">Aktiviere Wi-Fi für eine bestimmte Dauer während der Bildschirm aus ist. </string>
+    <!--  -->
+    <string name="keep_wifi_disabled_for">Lasse Wi-Fi deaktiviert für</string>
+    <!--  -->
+    <string name="then_keep_wifi_enabled_for">Lasse anschließend Wi-Fi aktiviert für</string>
+    <!--  -->
+    <string name="do_not_turn_off_synchronization_while">Schalte die Daten-Synchronisation NICHT aus, wenn das Gerät über USB oder Strom verbunden ist. </string>
+    <!--  -->
+    <string name="timer">Timer</string>
+    <!--  -->
+    <string name="master_switch">Hauptschalter </string>
+    <!--  -->
+    <string name="enable_smart_network_module">Aktiviere das Smart Network Modul</string>
+
+</resources>

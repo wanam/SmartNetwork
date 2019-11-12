@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Network</string>
+    <string name="donate">Doação</string>
+    <string name="no_thanks">Não Obrigado</string>
+    <string name="enable_smart_switch">Modo de Troca de rede</string>
+    <string name="switch_data_connection_type">Mudar o tipo de rede no modo tela desligada (2G / GSM ou somente sua tela selecionado o modo Tela apagada) quando a tela estiver desligada.</string>
+    <string name="default_screen_on_mode">Tela padrão do modo Ligada</string>
+    <string name="select_your_default_screen">Selecione o modo de rede padrão para tela Ligada.</string>
+    <string name="default_screen_off_mode">Modo de tela Apagada Padrão</string>
+    <string name="select_your_default_screen_off">Selecione o modo de rede padrão para tela apagada.</string>
+    <string name="disconnect_wifi">Desconectar WiFi</string>
+    <string name="disconnect_from_active_wifi">Desconectar do atual ponto de acesso Wi-Fi quando a tela se Desligar.</string>
+    <string name="turn_off_wifi">Desligar WiFi</string>
+    <string name="turn_off_wifi_service">Desativar o serviço de Wi-Fi quando a tela for desligada.</string>
+    <string name="about_info">"
+Mohamed Karami (Wanam)
+@xda-developers @ce4arab 
+
+http://twitter.com/WanamXda
+"</string>
+    <string name="rate_app">Classificar App</string>
+    <string name="white_list_applications">Aplicativos Lista Branca</string>
+    <string name="wifi_will_not_disconnect_turn_off">Wifi não irá desligar / ligar ou desligar se aplicativos selecionados estiverem em execução.</string>
+    <string name="wifi">Wifi</string>
+    <string name="mobile_networks">Redes Móveis</string>
+    <string name="mobile_data_will_not_switch_turn_off">Dados móveis não liga / desliga-se se os aplicativos selecionados estiverem em execução.</string>
+    <string name="select_all_none">Selecionar Todos / Nenhum</string>
+
+</resources>

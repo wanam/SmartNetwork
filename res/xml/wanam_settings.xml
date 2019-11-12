@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@drawable/ic_launcher"
+    android:key="prefsRoot" >
+
+    <de.robv.android.xposed.library.ui.TextViewPreference
+        android:key="wanamHeader"
+        android:selectable="false"
+        android:title="" />
+
+    <de.robv.android.xposed.library.ui.SeparatorPreference height="1" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="masterEnabled"
+        android:summary="@string/enable_smart_network_module"
+        android:title="@string/master_switch" />
+
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_sync"
+        android:title="@string/data_synchronization" >
+        <PreferenceCategory android:title="@string/data_synchronization" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="disableSync"
+                android:summary="@string/disable_data_auto_synchronization"
+                android:title="@string/disable_auto_sync" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="30"
+                min="0"
+                android:defaultValue="0"
+                android:dependency="disableSync"
+                android:key="delayBeforeSyncOff"
+                android:summary="@string/select_the_delay_screen_goes_off_before_d"
+                android:title="@string/sync_deactivation_delay" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="keepSyncONCharging"
+                android:summary="@string/do_not_turn_off_synchronization_while"
+                android:title="@string/keep_while_charging" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/timer" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="enableSyncTimer"
+                android:summary="@string/enable_data_synchronization_for"
+                android:title="@string/activation_timer" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="60"
+                min="1"
+                android:defaultValue="30"
+                android:dependency="enableSyncTimer"
+                android:key="enableSyncAfter"
+                android:summary="@string/keep_data_synchronization_disabled_for"
+                android:title="@string/deactivation_interval" />
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="60"
+                min="1"
+                android:defaultValue="5"
+                android:dependency="enableSyncTimer"
+                android:key="enableSyncFor"
+                android:summary="@string/then_keep_data_synchronization_enabled_for"
+                android:title="@string/activation_duration" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_mobile"
+        android:title="@string/mobile_networks" >
+        <PreferenceCategory android:title="@string/mobile_networks" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="smart2GEnabled"
+                android:summary="@string/switch_data_connection_type"
+                android:title="@string/enable_smart_switch" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="smart2GONWiFiEnabled"
+                android:summary="@string/switch_mobile_network_mode_to_screen_off"
+                android:title="@string/switch_while_wifi_is_connected" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="30"
+                min="0"
+                android:defaultValue="0"
+                android:key="delayBeforeMobileOff"
+                android:summary="@string/select_the_delay_smart_network_should_wait"
+                android:title="@string/switching_delay" />
+
+            <de.robv.android.xposed.library.ui.IntegerListPreference
+                android:defaultValue="99"
+                android:entries="@array/network_modes"
+                android:entryValues="@array/network_modes_values"
+                android:key="networkModeOff"
+                android:summary="@string/select_your_default_screen_off"
+                android:title="@string/default_screen_off_mode" />
+            <de.robv.android.xposed.library.ui.IntegerListPreference
+                android:defaultValue="9"
+                android:entries="@array/network_modes"
+                android:entryValues="@array/network_modes_values"
+                android:key="networkModeON"
+                android:summary="@string/select_your_default_screen"
+                android:title="@string/default_screen_on_mode" />
+
+            <Preference
+                android:key="MobileWhiteList"
+                android:summary="@string/mobile_data_will_not_switch_turn_off"
+                android:title="@string/white_list_applications" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:disableDependentsState="true"
+                android:key="keepONWiFiAP"
+                android:summary="@string/keep_current_mobile_data_state_while_wifi"
+                android:title="@string/keep_on_wifi_ap" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="keepONCall"
+                android:summary="@string/keep_current_mobile_data_call_is_active"
+                android:title="@string/keep_on_active_call" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="keepDataONCharging"
+                android:summary="@string/do_not_switch_turn_off_mobile_data"
+                android:title="@string/keep_while_charging" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/timer" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="enableDataTimer"
+                android:summary="@string/enable_mobile_data_higher_network_mode"
+                android:title="@string/activation_timer" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="60"
+                min="1"
+                android:defaultValue="30"
+                android:dependency="enableDataTimer"
+                android:key="enableDataAfter"
+                android:summary="@string/keep_mobile_data_higher_network"
+                android:title="@string/deactivation_interval" />
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="60"
+                min="1"
+                android:defaultValue="5"
+                android:dependency="enableDataTimer"
+                android:key="enableDataFor"
+                android:summary="@string/then_keep_mobile_data_higher_network"
+                android:title="@string/activation_duration" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_wifi"
+        android:title="@string/wifi" >
+        <PreferenceCategory android:title="@string/wifi" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="wifiDisconnect"
+                android:summary="@string/disconnect_from_active_wifi"
+                android:title="@string/disconnect_wifi" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="wifiToggle"
+                android:summary="@string/turn_off_wifi_service"
+                android:title="@string/turn_off_wifi" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="30"
+                min="0"
+                android:defaultValue="0"
+                android:key="delayBeforeWiFiOff"
+                android:summary="@string/select_the_delay_screen_goes_off_before_c"
+                android:title="@string/switching_delay" />
+
+            <Preference
+                android:key="WiFiWhiteList"
+                android:summary="@string/wifi_will_not_disconnect_turn_off"
+                android:title="@string/white_list_applications" />
+
+            <ma.wanam.smartnetwork.dialogs.APWhitelistPreference
+                android:dialogTitle="@string/wifi_ap_whitelist"
+                android:key="WiFiAPWhiteList"
+                android:summary="@string/wifi_state_will_not_change_if_one_of" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="keepWiFiONCharging"
+                android:summary="@string/do_not_disconnect_turn_off_wifi"
+                android:title="@string/keep_while_charging" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/timer" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="enableWiFiTimer"
+                android:summary="@string/enable_wifi_for_a_specific_duration"
+                android:title="@string/activation_timer" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="60"
+                min="1"
+                android:defaultValue="30"
+                android:dependency="enableWiFiTimer"
+                android:key="enableWiFiAfter"
+                android:summary="@string/keep_wifi_disabled_for"
+                android:title="@string/deactivation_interval" />
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="60"
+                min="1"
+                android:defaultValue="5"
+                android:dependency="enableWiFiTimer"
+                android:key="enableWiFiFor"
+                android:summary="@string/then_keep_wifi_enabled_for"
+                android:title="@string/activation_duration" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_bt"
+        android:title="@string/bluetooth" >
+        <PreferenceCategory android:title="@string/bluetooth" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="BTTurnOff"
+                android:summary="@string/turn_off_bluetooth_when_screen_is_off"
+                android:title="@string/disable_bluetooth" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="30"
+                min="0"
+                android:defaultValue="0"
+                android:dependency="BTTurnOff"
+                android:key="delayBeforeBTOff"
+                android:summary="@string/select_the_delay_screen_bluetooth_state"
+                android:title="@string/turn_off_delay" />
+
+            <Preference
+                android:key="BTWhiteList"
+                android:summary="@string/bt_will_not_disconnect_turn_off"
+                android:title="@string/white_list_devices" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_nfc"
+        android:title="@string/nfc" >
+        <PreferenceCategory android:title="@string/nfc" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="NFCTurnOff"
+                android:summary="@string/turn_off_nfc_when_screen_is_off"
+                android:title="@string/turn_off_nfc" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="30"
+                min="0"
+                android:defaultValue="0"
+                android:dependency="NFCTurnOff"
+                android:key="delayBeforeNFCOff"
+                android:summary="@string/select_the_delay_screen_goes_off_b"
+                android:title="@string/turn_off_delay" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_gps"
+        android:key="gpsPS"
+        android:title="@string/gps" >
+        <PreferenceCategory android:title="@string/gps" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="GPSTurnOff"
+                android:summary="@string/turn_off_gps_when_screen_is_off"
+                android:title="@string/turn_off_gps" />
+
+            <de.robv.android.xposed.library.ui.ValueSeekBarPreference
+                displayFormat="%d "
+                max="30"
+                min="0"
+                android:defaultValue="0"
+                android:dependency="GPSTurnOff"
+                android:key="delayBeforeGPSOff"
+                android:summary="@string/select_the_delay_screen_goes_off_gps"
+                android:title="@string/turn_off_delay" />
+
+            <de.robv.android.xposed.library.ui.IntegerListPreference
+                android:defaultValue="0"
+                android:dependency="GPSTurnOff"
+                android:entries="@array/gps_modes"
+                android:entryValues="@array/gps_modes_values"
+                android:key="GPSScreenOffMode"
+                android:summary="@string/select_your_default_screen_off"
+                android:title="@string/default_screen_off_mode" />
+            <de.robv.android.xposed.library.ui.IntegerListPreference
+                android:defaultValue="2"
+                android:dependency="GPSTurnOff"
+                android:entries="@array/gps_modes"
+                android:entryValues="@array/gps_modes_values"
+                android:key="GPSScreenONMode"
+                android:summary="@string/select_your_default_screen"
+                android:title="@string/default_screen_on_mode" />
+
+            <Preference
+                android:dependency="GPSTurnOff"
+                android:key="GPSWhiteList"
+                android:summary="@string/gps_will_not_disconnect_turn_off"
+                android:title="@string/white_list_applications" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:dependency="masterEnabled"
+        android:icon="@drawable/ic_adv"
+        android:title="Advanced" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="masterEnabled"
+            android:key="waitUntilUnlock"
+            android:summary="@string/wait_for_screen_unlock_before_turning"
+            android:title="@string/wait_until_screen_unlock" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="masterEnabled"
+            android:key="keepManualSettings"
+            android:summary="@string/beta_prevent_data_wifi"
+            android:title="@string/keep_manual_settings" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

@@ -1,0 +1,137 @@
+<resources>
+
+    <!--  -->
+    <string name="donate">Donar</string>
+    <!--  -->
+    <string name="no_thanks">No, gracias. </string>
+    <!--  -->
+    <string name="enable_smart_switch">Cambiar modo de red</string>
+    <!--  -->
+    <string name="wifi">Wi-Fi</string>
+    <!--  -->
+    <string name="turn_off_nfc">Apagar NFC</string>
+    <!--  -->
+    <string name="rate_app">Evaluar Aplicación</string>
+    <!--  -->
+    <string name="nfc">NFC</string>
+    <!--  -->
+    <string name="minutes">minutos</string>
+    <!--  -->
+    <string name="keep_while_charging">Mantener mientras se recarga</string>
+    <!--  -->
+    <string name="disconnect_wifi">Desconectar Wi-Fi</string>
+    <!--  -->
+    <string name="bluetooth">Bluetooth</string>
+    <!--  -->
+    <string name="activation_duration">Duración de activación</string>
+    <!--  -->
+    <string name="keep_on_active_call">Mantener en llamada activa</string>
+    <!--  -->
+    <string name="turn_off_wifi">apagar wifi</string>
+    <!--  -->
+    <string name="turn_off_wifi_service">apagar servicio wifi cuando se apaga pantalla</string>
+    <!--  -->
+    <string name="mobile_networks">redes móviles</string>
+    <!--  -->
+    <string name="switch_data_connection_type">Cambiar a modo pantalla apagada (sólo 2G/GSM o su modo de pantalla apagada) cuando se la pantalla esté apagada. </string>
+    <!--  -->
+    <string name="default_screen_on_mode">Modo pantalla encendida por defecto </string>
+    <!--  -->
+    <string name="select_your_default_screen">Seleccione la red por defecto con la pantalla encendida: %s</string>
+    <!--  -->
+    <string name="default_screen_off_mode">Modo pantalla apagada por defecto </string>
+    <!--  -->
+    <string name="select_your_default_screen_off">Seleccione la red por defecto con la pantalla apagada: %s</string>
+    <!--  -->
+    <string name="disconnect_from_active_wifi">Desconectar del actual AP WiFi cuando la pantalla esté apagada. </string>
+    <!--  -->
+    <string name="about_info">Mohamed Karami (Wanam) 
+@xda-developers @ce4arab
+
+http://twitter.com/WanamXda</string>
+    <!--  -->
+    <string name="white_list_applications">Lista blanca de aplicaciones </string>
+    <!--  -->
+    <string name="wifi_will_not_disconnect_turn_off">No se desconectará/apagará el WiFi si las aplicaciones seleccionadas están corriendo. </string>
+    <!--  -->
+    <string name="mobile_data_will_not_switch_turn_off">No se apagará/desconectará el tráfico de datos si las siguientes aplicaciones están corriendo. </string>
+    <!--  -->
+    <string name="select_all_none">\"Seleccionar Todos/Ninguno\" </string>
+   <!--  -->
+    <string name="disable_auto_sync">Deshabilitar la sincronización automática. </string>
+    <!--  -->
+    <string name="disable_data_auto_synchronization">Desactivar la sincronización automática sobre redes móviles y WiFi cuando la pantalla esté apagada. </string>
+    <!--  -->
+    <string name="data_synchronization">Sincronización de datos</string>
+    <!--  -->
+    <string name="switching_delay">Retraso en el cambio</string>
+    <!--  -->
+    <string name="sync_deactivation_delay">Retardo de desactivación de sincronización</string>
+    <!--  -->
+    <string name="select_the_delay_screen_goes_off_before_c">Selecciona el retardo con el que la pantalla se apaga antes de cambiar el estado de la Wifi</string>
+    <!--  -->
+    <string name="disable_bluetooth">Desactivar Bluetooth </string>
+    <!--  -->
+    <string name="turn_off_bluetooth_when_screen_is_off">Apagar Bluetooth  cuando la pantalla se apaga </string>
+    <!--  -->
+    <string name="turn_off_nfc_when_screen_is_off"> Apagar NFC  cuando la pantalla se apague</string>
+    <!--  -->
+    <string name="turn_off_delay">Apagar retardo</string>
+    <!--  -->
+    <string name="select_the_delay_screen_goes_off_b">Selecciona el retardo de apagado dela pantalla  antes de cambiar el estado NFC</string>
+    <!--  -->
+    <string name="keep_on_wifi_ap">Mantener Wifi AP encendida</string>
+    <!--  -->
+    <string name="select_the_delay_screen_bluetooth_state">seleccionar retardo de apagado después de cambiar estado de Bluetooth </string>
+    <!--  -->
+    <string name="keep_current_mobile_data_state_while_wifi">No cambiar estado de datos mientras el Tethering este activo</string>
+    <!--  -->
+    <string name="keep_current_mobile_data_call_is_active">No cambiar el estado de datos móviles durante  una llamada en curso</string>
+    <!--  -->
+    <string name="wifi_ap_whitelist">Lista blanca de Wifi SSID</string>
+    <!--  -->
+    <string name="wifi_state_will_not_change_if_one_of">Estado de Wifi no cambiará si uno de los puntos de acceso añadidos en la lista blanca es utilizado</string>
+    <!--  -->
+    <string name="switch_while_wifi_is_connected">Conmutar mientras la Wifi esta conectada</string>
+    <!--  -->
+    <string name="switch_mobile_network_mode_to_screen_off">conmutar el modo datos al apagar pantalla  si  la Wifi esta activa</string>
+    <!--  -->
+    <string name="do_not_switch_turn_off_mobile_data">No conmutar/apagar loa datos móviles  mientras el móvil  se encuentre conectado A corriente/usb</string>
+    <!--  -->
+    <string name="do_not_disconnect_turn_off_wifi">No Desconectar/apagar la wifi mientras se está cargando</string>
+    <!--  -->
+    <string name="activation_timer">programador de activación </string>
+    <!--  -->
+    <string name="enable_data_synchronization_for">Activar sincronización de datos por una  duración determinada mientras la pantalla está apagada</string>
+    <!--  -->
+    <string name="deactivation_interval">Intervalo de desactivación</string>
+    <!--  -->
+    <string name="keep_data_synchronization_disabled_for">Mantener la sincronización de datos desactivada durante</string>
+    <!--  -->
+    <string name="then_keep_data_synchronization_enabled_for"> entonces mantener la sincronización de datos activa durante</string>
+    <!--  -->
+    <string name="enable_mobile_data_higher_network_mode">Activar datos móviles (máxima velocidad) durante una duración determinada mientras la pantalla está apagada</string>
+    <!--  -->
+    <string name="keep_mobile_data_higher_network">Mantener los datos móviles en su máxima velocidad desactivada durante</string>
+    <!--  -->
+    <string name="then_keep_mobile_data_higher_network"> entonces mantener los datos móviles en su máxima velocidad activada durante</string>
+    <!--  -->
+    <string name="enable_wifi_for_a_specific_duration">Activar wifi durante un período de tiempo mientras la pantalla está apagada</string>
+    <!--  -->
+    <string name="keep_wifi_disabled_for">Mantener la wifi desactivada durante</string>
+    <!--  -->
+    <string name="then_keep_wifi_enabled_for"> entonces mantener la wifi activada durante</string>
+    <!--  -->
+    <string name="do_not_turn_off_synchronization_while"> no apagar la sincronización mientras el terminal está enchufado a USB o corriente</string>
+    <!--  -->
+    <string name="timer">Temporizador</string>
+    <!--  -->
+    <string name="master_switch">interruptor general </string>
+    <!--  -->
+    <string name="enable_smart_network_module">activar modulo de Red inteligente </string>
+    <!--  -->
+    <string name="wait_until_screen_unlock">Esperar a que se desbloquee la pantalla</string>
+    <!--  -->
+    <string name="wait_for_screen_unlock_before_turning">Esperar a que la pantalla se desbloquee para activar todas las funcionalidades y servicios</string>
+
+</resources>
